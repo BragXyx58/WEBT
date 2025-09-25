@@ -2,31 +2,40 @@ import './App.css'
 
 function App() {
   return (
-    <div className="login-container">
-      <form className="login-form">
-        <h2>Login to your account</h2>
+    <div className="card">
+      <div className="card-top">
+        <img
+          src="https://yellow.ua/skin/frontend/base/default/images/catalog/product/compare.svg"
+          alt="scale"
+          className="card-icon"
+        />
+      </div>
 
-        <div className="input-group">
-          <span className="icon">👤</span>
-          <input type="text" placeholder="Username" />
+      <img
+        className="card-image"
+        src="https://yellow.ua/media/catalog/product/cache/9/image/508x508/9df78eab33525d08d6e5fb8d27136e95/5/9/594364394_3.jpg"
+        alt="Apple iPhone 17 Pro Max 2TB"
+      />
+
+      <div className="card-body">
+        <div className="card-title">Apple iPhone 17 Pro Max
+          <div className="card-sub">2TB (Cosmic Orange)</div>
         </div>
 
-        <div className="input-group">
-          <span className="icon">🔒</span>
-          <input type="password" placeholder="Password" />
+        <div className="card-price">
+          <span className="card-price-num">123 999</span>
+          <span className="card-currency">грн</span>
         </div>
 
-        <div className="action-row">
-          <button type="submit" className="login-btn">LOG IN</button>
-          <a href="#" className="forgot-link">Forgotten password?</a>
-        </div>
+        <button className="card-button" disabled>
+          Замовлення
+        </button>
 
-        <p className="footer-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Fusce semper laoreet placerat. Nullam semper auctor justo,
-          rutrum posuere odio vulputate nec.
-        </p>
-      </form>
+        <div className="card-footer">
+          <span className="card-status">Немає в наявності</span>
+          <span className="card-code">код: 000086212</span>
+        </div>
+      </div>
     </div>
   )
 }
